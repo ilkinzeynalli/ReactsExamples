@@ -3,23 +3,26 @@ import Navi from "./Navi"
 import ProductList from "./ProductList"
 
 function App() {
+  let categoryInfo = {title: "Category List"};
+  let productInfo = { title: "Product List",baskaBiSey:"tytyutyutyuytuytu"};
+
   return (
     <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12">
             <Navi />
           </div>
         </div>
       </div>
       <br />
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <CategoryList />
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-3">
+            <CategoryList info = {categoryInfo}/>
           </div>
-          <div class="col-sm-9">
-            <ProductList />
+          <div className="col-sm-9">
+            <ProductList info = {productInfo}/>
           </div>
         </div>
       </div>
