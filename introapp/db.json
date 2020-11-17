@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "productName": "Chai",
+      "quantityPerUnit": "48 - 6 oz jpg",
+      "unitPrice": "23",
+      "unitsInStock": 53
+    },
+    {
+      "id": 2,
+      "categoryId": 2,
+      "productName": "Product 2",
+      "quantityPerUnit": "48 - 6 oz jpg",
+      "unitPrice": "54",
+      "unitsInStock": 64
+    },
+    {
+      "id": 3,
+      "categoryId": 2,
+      "productName": "Product 3",
+      "quantityPerUnit": "48 - 6 oz jpg",
+      "unitPrice": "23",
+      "unitsInStock": 56
+    },
+    {
+      "id": 4,
+      "categoryId": 3,
+      "productName": "Product 4",
+      "quantityPerUnit": "48 - 6 oz jpg",
+      "unitPrice": "23",
+      "unitsInStock": 23
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Category 1"
+    },
+    {
+      "id": 2,
+      "categoryName": "Category 2"
+    },
+    {
+      "id": 3,
+      "categoryName": "Category 3"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // class Deneme extends React.Component {
+        //     onClickDiv = (data) => {
+        //         alert(data);
+        //     }
+        //     render() {
+        //         return <button onClick={() => this.onClickDiv('123')} >sdadsa</button>
+        //     }
+        // }
+
+        // ReactDOM.render(<Deneme />, document.getElementById("root"));
+
+        class Deneme extends React.Component{
+            constructor(props){
+                super(props);
+            }
+            deleteRow = id => {
+                alert(id);
+            }
+
+            render(){
+                return(
+                    <div>
+                         <button onClick={() => this.deleteRow(6)}>Delete Row</button>
+                    </div>
+                 
+                );
+            }
+        }
+
+        ReactDOM.render(<Deneme />, document.getElementById("root"));
+
+
+
+        // class LoggingButton extends React.Component {
+        //     // Bu yazım şekli, `this`'in handleClick içerisinde bağlanmasını sağlar.
+        //     // Uyarı: henüz *deneysel* bir özelliktir.
+        //     handleClick = () => {
+        //         console.log('this is:');
+        //     }
+
+        //     render() {
+        //         return (
+        //             <button onClick={()=>this.handleClick()}>
+        //                 Click me
+        //             </button>
+        //         );
+        //     }
+        // }
+        // ReactDOM.render(<LoggingButton />, document.getElementById("root"));
+
+
+        // class Toggle extends React.Component {
+        //     constructor(props) {
+        //         super(props);
+        //         this.state = { isToggleOn: true };
+        //         this.handleClick = this.handleClick.bind(this);
+        //     }
+
+        //     handleClick() {
+        //         this.setState(state => ({
+        //             isToggleOn: !state.isToggleOn
+        //         }));
+        //     }
+
+        //     render(){
+        //         return(
+        //             <button onClick={this.handleClick}>
+        //                 {this.state.isToggleOn ? 'ON':'OFF'}
+        //             </button>
+        //         );
+        //     }
+        // }
+        // ReactDOM.render(<Toggle />, document.getElementById("root"));
+
+        // function ActiveLink(){
+        //     function handleClick(e){
+        //         e.preventDefault();
+        //         console.log('The link was clicked.');
+        //     }
+
+        //     return (
+        //         <a href="#" onClick={handleClick}>
+        //             Link
+        //         </a>
+        //     );
+        // }
+
+        //ReactDOM.render(<ActiveLink />, document.getElementById("root"));
+    </script>
+</body>
+
+</html>
